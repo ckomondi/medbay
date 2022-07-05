@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+
+
+:root
+{
+    /* #region Colors */
+    /* - Semantic */
+    --foreground: #0B0B0A;
+    --accent: #555770;
+    --tint: #8F90A6;
+    --gray: #C7C9D9;
+    --shade: #EBEBF0;
+    --highlight: #F2F2F5;
+    --background: #FAFAFC;
+
+
+    /* --foreground: #FAFAFC; 
+    --accent: #F2F2F5; 
+    --tint: #EBEBF0; 
+    --gray: #C7C9D9; 
+    --shade: #8F90A6; 
+    --highlight: #555770; 
+    --background: #0B0B0A;  */
+
+    /* - Semantic */
+    --success: #39D98A;
+    --info: #5B8DEF;
+    --warning: #FDAC42;
+    --error: #FF5C5C;
+
+    --brand: rgb(38, 82, 143); 
+    /* #endregion */
+
+    /* #region Text Styles */
+    --display: 
+    "Inter",
+    "Be Vietnam Pro", 
+    "Rubik",
+    sans-serif;
+
+
+    --body:
+    "Inter",
+    "Be Vietnam Pro", 
+    "Rubik", 
+    sans-serif;
+    /* #endregion */
+
+    /* #region Weight Styles */
+    --regular: 300; 
+    --bold: 500; 
+    /* #endregion */
+
+}
+
+
+
+
+
+
+
+
