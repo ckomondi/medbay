@@ -67,20 +67,19 @@
     box-sizing: border-box;
 
     font-size: inherit;
+    color: var(--foreground); 
 }
 
 html 
 {
     font-size: 14px;
-
-    color: var(--foreground); 
-    stroke: var(--foreground);
-
-    z-index: 0; 
-    font-size: 1rem;
-    background-color: var(--background);
+    height: 100%;
 }
 
+body 
+{
+    height: 100%;
+}
 
 svg 
 {
