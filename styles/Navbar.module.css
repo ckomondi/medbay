@@ -2,18 +2,45 @@
 
 
 
+.nav 
+{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+
+    padding: 1rem 3vw; 
+}
+
+
 #logo 
 {
-    width: 1.5rem; 
-    height: 1.5rem;
+    width: 2rem; 
+    height: 2rem;
 }
 
-#logo path 
+#logo path, .navicon path 
 {
-    stroke: var(--foreground); 
-    stroke-width: 1;
+    stroke-width: 1.25px;
 }
 
+
+
+
+#navigation 
+{
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
+}
+
+.navicon
+{
+    width: 2rem; 
+    height: 2rem; ;
+    margin-left: 1rem;
+
+    padding: 2px; 
+}
 
 
 
