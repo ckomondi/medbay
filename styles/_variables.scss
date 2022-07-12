@@ -29,7 +29,15 @@ $weight-bold: 500;
 
 // Mixins
 @mixin container {
-    padding: 4vh 4vw; 
+    position: fixed;
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
 }
 
 
@@ -37,5 +45,22 @@ $weight-bold: 500;
     display: flex; 
     flex-direction: column;
 }
+
+
+
+// Components 
+.icon {
+    width: 1.5rem; 
+    height: 1.5rem;
+
+    > svg 
+    {
+        width: 100%; 
+        height: 100%;
+    }
+}
+
+
+
 
 

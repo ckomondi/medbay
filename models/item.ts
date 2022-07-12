@@ -5,22 +5,17 @@
 
 
 
-abstract class Item 
+enum ItemType 
 {
-    id: string; 
-    name: string;
-
-    constructor(_id: string, _name: string) 
-    {
-        this.id = _id; 
-        this.name = _name; 
-    }
+    search, 
+    guide,  
+    product, 
+    disease, 
+    symptom, 
 }
 
 
-export default Item; 
-
-
+export default ItemType; 
 
 
 
