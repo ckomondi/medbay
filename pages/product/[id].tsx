@@ -1,14 +1,21 @@
 
 
 
-
+import styles from "../../scss/product.module.scss"
 
 function ProductPage() {
     return (
 
-        <h1>Product Page</h1>
+        <main id={ styles.main }>   
+
+
+
+        </main>
+
+
     )
 }
+
 
 
 export default ProductPage; 
