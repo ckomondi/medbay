@@ -1,0 +1,45 @@
+
+
+
+
+@use "./variables" as app;
+
+
+
+#main {
+    padding: 4vw 8vh; 
+}
+
+
+.auto {
+    font-size: 0.8rem; 
+    font-weight: app.$weight-bold;
+
+    color: app.$color-tint; 
+
+    > span.correct {
+        color: app.$color-foreground; 
+    }
+
+    > span.query {
+        cursor: pointer;
+        color: app.$color-info; 
+    }
+}
+
+.showcase {
+
+
+    margin-top: 4vh;
+    width: 100%;
+    height: 16rem; 
+    background-color: #E5F0FF;
+
+    overflow: hidden;
+    border-radius: 1rem; 
+    ;
+}
+
+
+
+
