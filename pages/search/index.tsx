@@ -2,7 +2,8 @@
 
 
 
-import React, { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/router";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import ItemType from "../../models/item";
 import styles from "../../styles/search.module.scss"
 import Icon from "../../utilities/components/icon";
@@ -26,7 +27,8 @@ class SearchItem
 
 function Search() {
 
-    const [focused, setFocused] = useState(false); 
+
+    const router = useRouter(); 
 
     const searches = useMemo(() => {
 
@@ -39,19 +41,29 @@ function Search() {
 
     }, []); 
 
+    const onCommit = useCallback((event: React.KeyboardEvent<HTMLTextAreaElement>) => {
+
+        event.preventDefault(); 
+        const text = event.target.value; 
+
+        if (text.length <= 0) { return; }
+
+        const path = encodeURIComponent(text); 
+        router.push(`/search/${ path }`); 
+
+    }, []); 
+
     return (
         <main id={ styles.main }>
 
-            <div style={{ maxHeight: (focused) ? "16%" : "100%" }} className={ styles.spacer }>
-            <input
+            <textarea
                 className={ styles.searchfield }
-                type="text"
                 placeholder="Type to search ..."
-                onFocus={() => { setFocused(true) }}
-                onBlur={() => { setFocused(false) }}
-                
-            />
-            </div>
+                cols={ 50 }
+                onKeyDown = { (event) => {
+                    if (event.key == "Enter") { onCommit(event) }
+                }}
+            ></textarea>
 
             <div className={ styles.history }>
             {
