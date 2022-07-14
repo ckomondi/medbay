@@ -5,7 +5,7 @@
 import { useRouter } from "next/router";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import ItemType from "../../models/item";
-import styles from "../../styles/search.module.scss"
+import styles from "../../scss/search.module.scss"
 import Icon from "../../utilities/components/icon";
 
 

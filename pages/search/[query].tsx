@@ -5,7 +5,7 @@
 import { useRouter } from "next/router";
 import { useMemo } from "react";
 
-import styles from "../../styles/query.module.scss"
+import styles from "../../scss/query.module.scss"
 
 
 function Query() {
