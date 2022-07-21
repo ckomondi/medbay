@@ -18,6 +18,10 @@ $color-info: #5C93FA;
 $color-warning: #FFD323; 
 $color-error: #FF5E6E; 
 
+// Typefaces
+$typeface-body: "Inter", sans-serif;
+$typeface-title: "Inter", sans-serif;
+
 
 // - Weights
 $weight-light: 200; 
@@ -44,6 +48,77 @@ $weight-bold: 500;
 }
 
 
+// #region Text styles 
+.truncated
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: no-wrap;
+}
+
+
+.display, h1
+{
+    font-size: 2rem; 
+    font-weight: var(--bold);
+    font-family: var(--display);
+}
+
+.heading, h2
+{
+    font-size: 1.5rem;
+    font-weight: var(--bold);
+}
+
+.title, h3 
+{
+    font-size: 1.25rem;
+    font-weight: var(--bold);
+}
+
+.subtitle, h4
+{
+    font-size: 1.1rem;
+    font-weight: var(--bold);
+}
+
+.label, h5
+{
+    font-weight: var(--bold);
+}
+
+
+.lead 
+{
+    font-weight: var(--bold); 
+    font-size: 0.95rem;
+}
+
+.caption
+{
+    font-weight: var(--bold);
+    font-size: 0.9rem;
+}
+
+.small
+{
+    font-size: 0.85rem;
+    font-weight: var(--bold);
+}
+
+.tiny 
+{
+    font-size: 0.85rem;
+}
+
+.truncated
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+// #endregion
+
 
 // Components 
 .icon {
@@ -56,6 +131,10 @@ $weight-bold: 500;
         height: 100%;
     }
 }
+
+
+
+
 
 
 

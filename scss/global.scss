@@ -22,14 +22,13 @@ html {
     
     color: app.$color-foreground; 
     font-weight: app.$weight-regular;
-    font-family: "Inter", sans-serif;
+    font-family: app.$typeface-body;
 
     line-height: 150%;
 
 }
 
-
-
+// #region Font Sizes
 @media screen and (min-width: 0px) and (max-width: 599px)
 {
     html 
@@ -53,5 +52,6 @@ html {
         font-size: 18px;
     }
 }
+// #endregion
 
 

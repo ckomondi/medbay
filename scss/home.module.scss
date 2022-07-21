@@ -1,0 +1,27 @@
+
+
+
+
+@use "../scss/variables" as app;
+
+
+#main {
+    @include app.container; 
+    width: 100vw; 
+    height: 100vh;
+}
+
+
+.map {
+
+    position: fixed; 
+    width: 100%; 
+    height: 100%;
+}
+
+
+
+
+
+
+
