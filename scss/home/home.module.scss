@@ -2,7 +2,7 @@
 
 
 
-@use "../scss/variables" as app;
+@use "../app/variables" as app;
 
 
 #main {
@@ -12,12 +12,7 @@
 }
 
 
-.map {
 
-    position: fixed; 
-    width: 100%; 
-    height: 100%;
-}
 
 .greeting {
 
