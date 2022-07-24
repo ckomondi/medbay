@@ -15,7 +15,7 @@ function Home() {
 
         <main id={ styles.main }>
             <Scrollview direction={ Axis.vertical }>
-                <h1 className="subtitle">Good Evening, Shanaa</h1>
+                <h1 className={ styles.greeting }>Good Evening</h1>
             </Scrollview>
         </main>
 

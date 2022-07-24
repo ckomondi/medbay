@@ -57,32 +57,32 @@ $weight-bold: 500;
 }
 
 
-.display, h1
+.display
 {
     font-size: 2rem; 
     font-weight: var(--bold);
     font-family: var(--display);
 }
 
-.heading, h2
+.heading
 {
     font-size: 1.5rem;
     font-weight: var(--bold);
 }
 
-.title, h3 
+.title 
 {
     font-size: 1.25rem;
     font-weight: var(--bold);
 }
 
-.subtitle, h4
+.subtitle
 {
     font-size: 1.1rem;
     font-weight: var(--bold);
 }
 
-.label, h5
+.label
 {
     font-weight: var(--bold);
 }
